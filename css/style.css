@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 400px;
-    background: url("https://images.unsplash.com/photo-1704504414486-292cc121cd0b?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") bottom no-repeat;
+    background: url("https://images.unsplash.com/photo-1554998171-89445e31c52b?q=80&w=1539&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") bottom no-repeat;
     background-size: cover;
   }
   body {
@@ -11,13 +11,16 @@ header {
     padding: 0;
   }
   h1{
-    color: rgb(255, 245, 228);
+    color: rgb(0, 0, 0);
     font-size: 4em;
+    -webkit-text-stroke-color: rgba(240, 248, 255, 0.596);
+    -webkit-text-stroke-width: 0.4px;
     font-family: 'Times New Roman', Times, serif;
   }
   .news {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 50px 0 32px;
+    border-style:ridge
   }
   article {
     width: 768px;
@@ -25,14 +28,21 @@ header {
     padding: 6px 15px;
     border-bottom: 1px solid rgb(128, 128, 128);
   }
+  article:nth-child(-n+2) h2:before {
+    color: aqua;
+    content: "New ";
+  }
+  article:nth-child(even) {
+    background-color: #54e4cc8c;
+  }
   article a {
     color:rgb(33, 37, 41);
     text-decoration: none;
   }
   article a:hover{
-    color:30085a1;
+    color: #0085a1;
   }
-  artocle h2{
+  article h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;  
   }
